@@ -8,7 +8,7 @@ public class TrafficLight {
 	private static final String Yellow = "\033[33;7m";
 	private static final String Green = "\033[32;7m";
 	
-	TrafficLight() {
+	void TrafficfLight() {
 		this.green = false;
 		this.yellow = false;
 		this.red = true;
@@ -18,8 +18,10 @@ public class TrafficLight {
 		return red;
 	}
 
-	public void setRed(boolean red) {
-		this.red = red;
+	public void setRedOn() {
+		this.green = false;
+		this.yellow = false;
+		this.red = true;
 	}
 
 	public boolean isGreen() {
@@ -27,7 +29,9 @@ public class TrafficLight {
 	}
 
 	public void setGreen(boolean green) {
-		this.green = green;
+		this.green = true;
+		this.red = false;
+		this.yellow = false;
 	}
 
 	public boolean isYellow() {
@@ -35,6 +39,23 @@ public class TrafficLight {
 	}
 
 	public void setYellow(boolean yellow) {
-		this.yellow = yellow;
+		this.yellow = true;
+		this.red = false;
+		this.green = false;
+	}
+	
+	 void displayLight() {
+		
+	    if (red) {
+		    System.out.print(Red + "Red" + Reset);}
+     	else if (yellow) {
+     		System.out.print(Yellow + "Yellow" + Reset);}
+     	else if (green) { 
+     		System.out.print(Green + "Green" + Reset);}
+     	else {
+     		System.out.print("All Lights Off");}
 	}
 }
+     	
+	
+		
