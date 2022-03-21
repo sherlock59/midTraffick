@@ -11,15 +11,15 @@ public class Intersection {
 		Intersection intersection1 = new Intersection("some street name");
 		intersection1.displayLight();
 	}   */
-	
+	// initializing instance fields
 	private String name;
 	private TrafficLight eastbound;
 	private TrafficLight westbound;
 	private TrafficLight northbound;
 	private TrafficLight southbound;
 	
-    Intersection() {
-		name = null;
+    Intersection() { // default constructor 
+		name = null; // initializing
 		eastbound = new TrafficLight();
 		westbound = new TrafficLight();
 		northbound = new TrafficLight();

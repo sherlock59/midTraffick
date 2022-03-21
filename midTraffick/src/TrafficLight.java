@@ -6,7 +6,8 @@
  */
 
 public class TrafficLight {
-	
+
+	// This piece of code presumably should allow to test the code if everything was coded in order
 	/*public static void main(String args[]) {
 		TrafficLight light = new TrafficLight();
 		light.displayLight();
