@@ -1,35 +1,15 @@
 public class TrafficLight {
 	
-	public static void main(String args[]) {
+	/*public static void main(String args[]) {
 		TrafficLight light = new TrafficLight();
 		light.displayLight();
 		System.out.println();
 		
-		light.setGreenOn();
-		light.displayLight();
-		light.setYellowOn();
-		light.displayLight();
 		light.setRedOn();
 		light.displayLight();
 		System.out.println();
-	}
-		
-		
+	} */
 	
-	private void setGreenOn() {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	private void setYellowOn() {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
 	private boolean red;
 	private boolean green;
 	private boolean yellow;
@@ -54,11 +34,11 @@ public class TrafficLight {
 		this.red = true;
 	}
 
-	public boolean isGreen() {
+	public boolean isGreenOn() {
 		return green;
 	}
 
-	public void setGreen(boolean green) {
+	public void setGreenOn(boolean green) {
 		this.green = true;
 		this.red = false;
 		this.yellow = false;
@@ -68,13 +48,13 @@ public class TrafficLight {
 		return yellow;
 	}
 
-	public void setYellow(boolean yellow) {
-		this.yellow = true;
+	public void setYellowOn(boolean yellow) {
 		this.red = false;
 		this.green = false;
+		this.yellow = true;
 	}
 	
-	 void displayLight() {
+	public void displayLight() {
 		
 	    if (red) {
 		    System.out.print(Red + "Red" + Reset);}
@@ -84,9 +64,5 @@ public class TrafficLight {
      		System.out.print(Green + "Green" + Reset);}
      	else {
      		System.out.print("All Lights Off");}
-	 }
 	}
-	
-
-	
-		
+}
