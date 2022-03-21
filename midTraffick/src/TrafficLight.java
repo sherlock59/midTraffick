@@ -34,21 +34,21 @@ public class TrafficLight {
 		this.red = true;
 	}
 
-	public boolean isGreenOn() {
+	public boolean isGreen() {
 		return green;
 	}
 
-	public void setGreenOn(boolean green) {
-		this.green = true;
+	public void setGreenOn() {
 		this.red = false;
 		this.yellow = false;
+		this.green = true;
 	}
 
 	public boolean isYellow() {
 		return yellow;
 	}
 
-	public void setYellowOn(boolean yellow) {
+	public void setYellowOn() {
 		this.red = false;
 		this.green = false;
 		this.yellow = true;

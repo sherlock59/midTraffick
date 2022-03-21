@@ -1,3 +1,10 @@
+/*
+ * Description: This code presents traffic light colors and does function as regular traffic light. input
+ * Written by: Anaberdi Meredov
+ * Date Written: 2022.03.21
+ * GitHub: https://github.com/sherlock59/InvoiceApp.git
+ */
+
 public class Intersection {
 	
 /*	public static void main(String name[]) {
@@ -18,8 +25,8 @@ public class Intersection {
 		northbound = new TrafficLight();
 		southbound = new TrafficLight();
 		
-		eastbound.setGreenOn(true);
-		westbound.setGreenOn(true);
+		eastbound.setGreenOn();
+		westbound.setGreenOn();
 //		northbound.setGreenOn(false);
 //		southbound.setGreenOn(false);
 	}
@@ -57,9 +64,9 @@ public class Intersection {
 		southbound.setRedOn();
 	}
      public void switchTraffic() {
-		if(eastbound.isGreenOn()) {
-		   eastbound.setYellowOn(false);
-	       westbound.setYellowOn(false);
+		if(eastbound.isGreen()) {
+		   eastbound.setYellowOn();
+	       westbound.setYellowOn();
 	    } else if (eastbound.isYellow()) {
 			       eastbound.setRedOn();
 			       westbound.setRedOn();

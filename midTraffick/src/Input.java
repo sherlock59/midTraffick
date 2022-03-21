@@ -15,7 +15,6 @@ public class Input{
     	int userInput = 0;
 		
 		System.out.print(prompt);
-		
 		while (true) {
 			if (sc.hasNextInt()) 
 				break;
