@@ -1,3 +1,10 @@
+/*
+ * Description: This code presents traffic light colors and does function as regular traffic light. input
+ * Written by: Anaberdi Meredov
+ * Date Written: 2022.03.21
+ * GitHub: https://github.com/sherlock59/midTraffick
+ */
+
 public class TrafficController {
 	private Intersection intersection1;
 	private Intersection intersection2;
