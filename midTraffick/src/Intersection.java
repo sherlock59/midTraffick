@@ -1,7 +1,7 @@
 public class Intersection {
 	
 /*	public static void main(String name[]) {
-		Intersection intersection1 = new Intersection("23123wa3e2q3");
+		Intersection intersection1 = new Intersection("some street name");
 		intersection1.displayLight();
 	}   */
 	
@@ -57,15 +57,13 @@ public class Intersection {
 		southbound.setRedOn();
 	}
      public void switchTraffic() {
-		if(eastbound.isGreen(true)) {
+		if(eastbound.isGreenOn()) {
 		   eastbound.setYellowOn(false);
 	       westbound.setYellowOn(false);
 	    } else if (eastbound.isYellow()) {
-			       eastbound.setRedOn(false);
-			       westbound.setRedOn(false);
-	    } else if (eastbound.isRed(true);
-	    	eastbound.setGreenOn(false);
-	    	westbound.setGreenOn(false);
+			       eastbound.setRedOn();
+			       westbound.setRedOn();
 	    }
+     }
 }
 
