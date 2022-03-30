@@ -7,10 +7,10 @@
 
 public class Intersection {
 	
-/*	public static void main(String name[]) {
+	/*public static void main(String name[]) {
 		Intersection intersection1 = new Intersection("some street name");
 		intersection1.displayLight();
-	}   */
+	}    */
 	// initializing instance fields
 	private String name;
 	private TrafficLight eastbound;
@@ -22,13 +22,13 @@ public class Intersection {
 		name = null; // initializing
 		eastbound = new TrafficLight();
 		westbound = new TrafficLight();
-		northbound = new TrafficLight();
-		southbound = new TrafficLight();
+		northbound = new TrafficLight();  // testing purposes 
+		southbound = new TrafficLight();  // testing purposes
 		
 		eastbound.setGreenOn();
 		westbound.setGreenOn();
-//		northbound.setGreenOn(false);
-//		southbound.setGreenOn(false);
+//		northbound.setRedOn();  // testing purposes
+//		southbound.setYellowOn();  // testing purposes
 	}
     
 	Intersection(String name) {

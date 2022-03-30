@@ -64,5 +64,13 @@ public class Input{
 		return userInput;
 		
 	} // end of getIntRange
+    
+    public static void main(String args[]) { // Main that checks if user enters 0 to display bye
+    	TrafficController pusher = new TrafficController();
+    	pusher.controlTraffic();
+    	
+    	System.out.println("Goodbye...Safe Drivings!");
+    	Input.sc.close();
+    }
 	
 } // end of Input class

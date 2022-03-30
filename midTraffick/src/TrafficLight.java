@@ -16,8 +16,8 @@ public class TrafficLight {
 		light.setRedOn();
 		light.displayLight();
 		System.out.println();
-	} */
-	
+	} 
+	*/
 	//defining Instance fields with boolean data types
 	private boolean red;
 	private boolean green;

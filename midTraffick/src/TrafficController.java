@@ -25,6 +25,10 @@ public class TrafficController {
 			   this.switchAll();
 			   this.displayAll();
 			   break;
+			case 2:
+				this.stopAll();
+				this.displayAll();
+				break;
 			default:
 				System.out.println("Choice" + menuChoice + " is Invalid. Please choose again");
 		}
@@ -44,7 +48,7 @@ public class TrafficController {
 		System.out.println("");
 		return userInput;
 	}
-	public void switchAll() {
+	public void switchAll() {  //  coding a shell to prove if it can call
 		intersection1.switchTraffic();
 		intersection2.switchTraffic();
 	}
@@ -55,5 +59,5 @@ public class TrafficController {
 	public void displayAll() {
 		intersection1.displayLight();
 		intersection2.displayLight();
-	}
+	} 
 }
