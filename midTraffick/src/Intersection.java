@@ -17,6 +17,8 @@ public class Intersection {
 	private TrafficLight westbound;
 	private TrafficLight northbound;
 	private TrafficLight southbound;
+	public boolean isNorthboundYellow = northbound.isYellow();
+	public boolean isEastboundYellow = eastbound.isYellow();
 	
     Intersection() { // default constructor 
 		name = null; // initializing
@@ -69,8 +71,20 @@ public class Intersection {
 	       westbound.setYellowOn();
 	    } else if (eastbound.isYellow()) {
 			       eastbound.setRedOn();
-			       westbound.setRedOn();
-	    }
-     }
-}
-
+			       westbound.setRedOn();}
+	      else if (eastbound.isRed() && isNorthboundYellow) {
+	    	       eastbound.setGreenOn();
+	    	       westbound.setGreenOn();}
+		
+		if(northbound.isGreen()) {
+			northbound.setYellowOn();
+			southbound.setYellowOn();}
+		else if(northbound.isYellow()) {
+			northbound.setRedOn();
+			southbound.setRedOn();}
+		else if (northbound.isRed() && isEastboundYellow) {
+			northbound.setGreenOn();
+			southbound.setGreenOn();}
+		}
+  }
+	

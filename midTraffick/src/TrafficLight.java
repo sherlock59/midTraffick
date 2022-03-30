@@ -67,12 +67,12 @@ public class TrafficLight {
 	public void displayLight() { // Displaying lights according to the traffic light
 		
 	    if (red) {
-		    System.out.print(Red + "Red" + Reset);}
-     	else if (yellow) {
-     		System.out.print(Yellow + "Yellow" + Reset);}
+	      System.out.println(Red + "Red" + Reset);}
+	    else if (yellow) {
+     		System.out.println(Yellow + "Yellow" + Reset);}
      	else if (green) { 
-     		System.out.print(Green + "Green" + Reset);}
+     		System.out.println(Green + "Green" + Reset);}
      	else {
-     		System.out.print("All Lights Off");}
+     		System.out.println("All Lights Off");}
 	}
 }
