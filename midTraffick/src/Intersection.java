@@ -1,10 +1,9 @@
-/*
- * Description: This code presents traffic light colors and does function as regular traffic light. input
- * Written by: Anaberdi Meredov
- * Date Written: 2022.03.21
- * GitHub: https://github.com/sherlock59/midTraffick
+/**
+ * Description: This code presents traffic light colors and does function as regular traffic light
+ * Date Written: 03/21/2022
+ * Github: https://github.com/sherlock59/midTraffick
+ * @author Annaberdi Meredov
  */
-
 public class Intersection {
 	
 	/*public static void main(String name[]) {
@@ -17,8 +16,6 @@ public class Intersection {
 	private TrafficLight westbound;
 	private TrafficLight northbound;
 	private TrafficLight southbound;
-	public boolean isNorthboundYellow = northbound.isYellow();
-	public boolean isEastboundYellow = eastbound.isYellow();
 	
     Intersection() { // default constructor 
 		name = null; // initializing
@@ -29,11 +26,12 @@ public class Intersection {
 		
 		eastbound.setGreenOn();
 		westbound.setGreenOn();
-//		northbound.setRedOn();  // testing purposes
-//		southbound.setYellowOn();  // testing purposes
+		nort.setRedOn(); 
+
 	}
     
 	Intersection(String name) {
+		this();
 		this.name = name;
 	}
 	public String getName() {
@@ -65,23 +63,27 @@ public class Intersection {
 		northbound.setRedOn();
 		southbound.setRedOn();
 	}
+	
      public void switchTraffic() {
+    	 
 		if(eastbound.isGreen()) {
 		   eastbound.setYellowOn();
-	       westbound.setYellowOn();
-	    } else if (eastbound.isYellow()) {
+	       westbound.setYellowOn();}
+	       
+	      else if (eastbound.isYellow()) {
 			       eastbound.setRedOn();
 			       westbound.setRedOn();}
+		
 	      else if (eastbound.isRed() && isNorthboundYellow) {
 	    	       eastbound.setGreenOn();
 	    	       westbound.setGreenOn();}
 		
-		if(northbound.isGreen()) {
-			northbound.setYellowOn();
+		 if(northbound.isGreen()) {
+			northbound.setYellowOn()
 			southbound.setYellowOn();}
 		else if(northbound.isYellow()) {
-			northbound.setRedOn();
-			southbound.setRedOn();}
+			    northbound.setRedOn();
+			    southbound.setRedOn();}
 		else if (northbound.isRed() && isEastboundYellow) {
 			northbound.setGreenOn();
 			southbound.setGreenOn();}

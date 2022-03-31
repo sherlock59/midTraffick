@@ -1,10 +1,9 @@
-/*
- * Description: This code presents traffic light colors and does function as regular traffic light. input
- * Written by: Anaberdi Meredov
- * Date Written: 2022.03.21
- * GitHub: https://github.com/sherlock59/midTraffick
+/**
+ * Description: This code presents traffic light colors and does function as regular traffic light
+ * Date Written: 03/21/2022
+ * Github: https://github.com/sherlock59/midTraffick
+ * @author Annaberdi Meredov
  */
-
 public class TrafficController {
 	private Intersection intersection1;
 	private Intersection intersection2;
@@ -14,6 +13,7 @@ public class TrafficController {
 		intersection1 = new Intersection("50th & address");
 		intersection2 = new Intersection("49th & address");
 	}
+	
 	public void controlTraffic() {
 		int menuChoice = -1;
 		while(menuChoice !=0) {
